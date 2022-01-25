@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+
+\usepackage[onehalfspacing]{setspace}
+\usepackage[english]{babel}
+\usepackage[backend=biber, citestyle=ieee]{biblatex}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[table,dvipsnames]{xcolor}
+\usepackage{hyperref, titlesec, fontspec, ulem, indentfirst}
+
+\usepackage{csquotes}
+
+\addbibresource{sources.bib}
+
+\setmainfont{Times New Roman}
+
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\itshape\bfseries\itshape}
+
+% Turkish locales suck so translate on a per caption bases
+\addto\captionsenglish{\renewcommand{\contentsname}{İçindekiler}}
+\addto\captionsenglish{\renewcommand{\figurename}{Şekil}}
+
+\frenchspacing
+\onehalfspacing
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+
+	{\scshape \LARGE TOBB EKONOMİ VE TEKNOLOJİ ÜNİVERSİTESİ \par}
+	\vspace{1cm}
+
+	{\scshape \huge ORTAK EĞİTİM \par}
+	\vspace{1.5cm}
+
+	{\bfseries \Large DÖNEM SONU ÖĞRENCİ RAPORU \par}
+	\vspace{2cm}
+
+	{
+	    \bfseries
+        	\begin{tabular}{ | l | p{0.7\textwidth} |}
+        	    \hline
+        	    Dönem & \\
+        	    \hline
+        	    Adı Soyadı & \\
+        	    \hline
+        	    Öğrenci No & \\
+        	    \hline
+        	    Bölümü & \\
+        	    \hline
+        	    Akademik Danışman & \\
+        	    \hline
+        	    E-Posta & \\
+        	    \hline
+        	    \multicolumn{1}{| r |}{\textcolor{gray}{\textit{Öğrenci İmzası}}} & \\
+        	    \hline
+        	    \multicolumn{2}{| c |}{\cellcolor{gray!25} İşyeri} \\
+        	    \hline
+        	    Adı & \\
+        	    \hline
+        	    Adresi & \\
+        	    \hline
+        	    Şehir & \\
+        	    \hline
+        	    Telefon & \\
+        	    \hline
+        	    Web & \\
+        	    \hline
+        	    İşyeri Amiri & \\
+        	    \hline
+        	    \multicolumn{1}{| r |}{\textcolor{gray}{\textit{İşyeri Amiri İmzası}}} & \\
+        	    \hline
+        	\end{tabular}
+	    \par
+	}
+
+	\vfill
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{GİRİŞ}
+
+% \printbibliography[heading=bibintoc, title={Kaynakça}]
+
+\end{document}
